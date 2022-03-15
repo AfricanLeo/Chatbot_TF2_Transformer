@@ -1,6 +1,6 @@
 # Chatbot_TF2_Transformer
 Transformer chatbot built from scratch and implemented with Tensorflow 2 using greedy search- and top-k sampling to evaluate the model. 
-![](/images/chatbot.jpg
+![](/images/chatbot.jpg)
 
 # Project Goal
 
