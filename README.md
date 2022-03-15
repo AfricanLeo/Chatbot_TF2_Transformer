@@ -1,6 +1,6 @@
 # Chatbot_TF2_Transformer
 Transformer chatbot built from scratch and implemented with Tensorflow 2 using greedy search- and top-k sampling to evaluate the model. 
-(![](/images/chatbot.jpg)
+![](/images/chatbot.jpg
 
 # Project Goal
 
@@ -18,7 +18,7 @@ The model is implemented with TensorFlow 2.
 
 # A quick word about the data
 
-For this chatbot, we will use the Cornell Movie Dialogues Corpus This is a large metadata-rich collection of conversational exchanges between 10,292 pairs of movie characters, extracted from raw movie scripts.
+For this chatbot, we will use the [Cornell Movie Dialogues Corpus](https://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html) This is a large metadata-rich collection of conversational exchanges between 10,292 pairs of movie characters, extracted from raw movie scripts.
 
 The idea behind using this data is that movie conversations mimick everyday conversational exchanges between people.
 
@@ -26,7 +26,7 @@ Since the aim is to build a chatbot that can have a natural conversation with a 
 
 # Evaluation
 
-With the model built and trained it is now time to evaluate the quality of the text generation ability of the model.  I achieve this I feed an input utterance/sentence into the model which in turn generates a conditional probability distribution over the vocabulary of tokens according to the given input sequence.
+With the model built and trained it is now time to evaluate the quality of the text generation ability of the model.  I achieve this by feeding an input utterance/sentence into the model which in turn generates a conditional probability distribution over the vocabulary of tokens according to the given input sequence.
 
 We then sample a word from the probability distribution using two methods,  greedy search and/or top-k sampling. 
 
@@ -55,6 +55,9 @@ With short sentences and small k-values the model again produces good quality re
 For longer sentences still keeps the context, at least in the first response and in some cases even up until the second response but when the k-value becomes larger, the responses can become incoherent.
 
 The current model seems to hit a sweet spot at three sentences deep, providing 'conversation-like' responses that seem more or less understandable. When using k-sampling, the context is kept better and the best results seem to appear when k=3.  
- 
+
+# Conclusion
+Despite definitely needing some more refining, testing and then some more refining, this model provides a good starting points from which to work.  Options for future improvements include limiting data to series as opposed to movies, where the conversations are more natural. Another option would be to add an identifier that provides information about the conversation, as opposed to seeing every conversation as equal. 
+
 # Appreciation 
-Much appreciation to the very generous online community and specifically the [TensorFlow team](https://blog.tensorflow.org/2019/05/transformer-chatbot-tutorial-with-tensorflow-2.html) for providing a tutorial that implements a chatbot from scratch in TF 2.  Also to [Murat Karakaya Academy](https://colab.research.google.com/drive/1BFaokL7uLEKRtl8rmR9RUfIVAjqhGEZR#:~:text=Murat%20Karakaya%20Akademi%20YouTube%20Channel) for covering the topic of text generation.
+Much appreciation to the very generous online community and specifically the [TensorFlow team](https://blog.tensorflow.org/2019/05/transformer-chatbot-tutorial-with-tensorflow-2.html) for providing a tutorial that implements a chatbot from scratch in TF 2.  Also to [Murat Karakaya Academy](https://www.youtube.com/c/MuratKarakayaAkademi) for covering the topic of text generation.
