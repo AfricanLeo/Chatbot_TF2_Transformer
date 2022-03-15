@@ -1,5 +1,6 @@
 # Chatbot_TF2_Transformer
 Transformer chatbot built from scratch and implemented with Tensorflow 2 using greedy search- and top-k sampling to evaluate the model. 
+(![](/images/chatbot.jpg)
 
 # Project Goal
 
@@ -56,4 +57,4 @@ For longer sentences still keeps the context, at least in the first response and
 The current model seems to hit a sweet spot at three sentences deep, providing 'conversation-like' responses that seem more or less understandable. When using k-sampling, the context is kept better and the best results seem to appear when k=3.  
  
 # Appreciation 
-Much appreciation to the very generous online community and specifically the TensorFlow team for providing a tutorial that implements a chatbot from scratch in TF 2.  Also to [Murat Karakaya Academy](https://colab.research.google.com/drive/1BFaokL7uLEKRtl8rmR9RUfIVAjqhGEZR#:~:text=Murat%20Karakaya%20Akademi%20YouTube%20Channel) for covering the topic of text generation.
+Much appreciation to the very generous online community and specifically the [TensorFlow team](https://blog.tensorflow.org/2019/05/transformer-chatbot-tutorial-with-tensorflow-2.html) for providing a tutorial that implements a chatbot from scratch in TF 2.  Also to [Murat Karakaya Academy](https://colab.research.google.com/drive/1BFaokL7uLEKRtl8rmR9RUfIVAjqhGEZR#:~:text=Murat%20Karakaya%20Akademi%20YouTube%20Channel) for covering the topic of text generation.
